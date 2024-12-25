@@ -30,7 +30,7 @@
                             <label class="label">
                               <span class="label-text">Pin</span>
                             </label>
-                            <input type="password" placeholder="Your Pin " class="input input-bordered" autocomplete="off" required />
+                            <input id="pin-number" type="password" placeholder="Your Pin " class="input input-bordered" autocomplete="off" required />
                             <label class="label">
                               <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                             </label>
@@ -47,21 +47,6 @@
             </div>
           </div>
     </main>
-     <script>
-        //  step 1 set event handler //
-        document.getElementById('button-login')
-        .addEventListener('click', function(event){
-
-            event.preventDefault();
-            // step-2: prevent default bahavior ( pkrevent reloading browser) //
-
-            // step-3: get the phone number
-
-            const phoneNumber = document.getElementById('phone-number').value;
-            console.log(phoneNumber)
-
-        })
-     </script>
     <script src="js/login.js"></script>
 </body>
 
